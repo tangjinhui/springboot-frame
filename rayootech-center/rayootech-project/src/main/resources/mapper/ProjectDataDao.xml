@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rayootech.project.mapper.ProjectDataDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.rayootech.project.entity.ProjectData">
+        <id column="entityId" property="entityId" />
+        <result column="projectId" property="projectId" />
+        <result column="indicator_id" property="indicatorId" />
+        <result column="data_item" property="dataItem" />
+        <result column="item_value" property="itemValue" />
+        <result column="year" property="year" />
+        <result column="quarter" property="quarter" />
+        <result column="entityType" property="entityType" />
+        <result column="itcode" property="itcode" />
+        <result column="resourceId" property="resourceId" />
+        <result column="createTime" property="createTime" />
+        <result column="memo" property="memo" />
+        <result column="month" property="month" />
+    </resultMap>
+	<select id="selectById" resultMap="BaseResultMap" parameterType="com.rayootech.project.entity.ProjectData">
+		select * from project_data where 1=1
+		
+		<if test="entityId != null">
+			and entityId = #{entityId}
+		</if>
+	</select>
+</mapper>

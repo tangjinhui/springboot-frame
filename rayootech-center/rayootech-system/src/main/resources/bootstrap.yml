@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: system 
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #uri: http://10.39.31.36:8888
+      fail-fast: true
+      password: admincofig
+      username: admin         
