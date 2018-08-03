@@ -3,7 +3,10 @@
 
 # Log file
 *.log
-
+.settings  
+/*/.settings  
+target
+/*/target
 # BlueJ files
 *.ctxt
 
