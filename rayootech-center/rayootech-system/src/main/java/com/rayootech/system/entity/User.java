@@ -16,7 +16,7 @@ public class User {
 	private String codeNumber;
 	private String showAlert;
 	private String alertText;
-
+	 private String guoliwei;
 	public String getShowPassword() {
 		return showPassword;
 	}
