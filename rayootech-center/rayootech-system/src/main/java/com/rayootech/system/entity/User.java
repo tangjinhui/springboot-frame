@@ -16,7 +16,11 @@ public class User {
 	private String codeNumber;
 	private String showAlert;
 	private String alertText;
+<<<<<<< HEAD
 	private String guoliwei;
+=======
+	 private String guoliwei;
+>>>>>>> 9d51747a2f4e509a35be9c8c8ac0ab06df313a18
 	public String getShowPassword() {
 		return showPassword;
 	}
